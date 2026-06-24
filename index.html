@@ -290,6 +290,19 @@
     font-weight: 300;
   }
 
+  .card-deadline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--moss);
+    letter-spacing: 0.04em;
+    border-top: 1px solid var(--beige);
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
   .card-arrow {
     margin-top: 6px;
     width: 28px;
@@ -327,6 +340,40 @@
     font-weight: 300;
     color: var(--text-mid);
     line-height: 1.7;
+  }
+
+
+  /* ── RSVP DEADLINE ── */
+  .rsvp-deadline {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards 1.9s;
+  }
+
+  .rsvp-line {
+    width: 140px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--gold-light), transparent);
+  }
+
+  .rsvp-label {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 400;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  .rsvp-date {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1rem, 2.8vw, 1.2rem);
+    font-weight: 400;
+    color: var(--text-dark);
   }
 
   /* ── SECOND VERSE ── */
@@ -705,6 +752,7 @@
       </span>
       <span class="card-title">Confirmar Presença</span>
       <span class="card-desc">Aguardamos a sua confirmação</span>
+      <span class="card-deadline">até 05 de Agosto de 2026</span>
       <div class="card-arrow"></div>
     </a>
 
